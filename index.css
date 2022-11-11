@@ -1,0 +1,164 @@
+html {
+    font-size: 20px;
+    background-color: white;
+    block-size: 100%;
+    inline-size: 100%;
+}
+
+body {
+    min-block-size: 100%;
+    min-inline-size: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    place-content: center;
+    font-family: system-ui, sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+#title {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#description {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.card {
+    width: 400px;
+    height: 550px;
+    background-color: white;
+    color: #836181;
+    text-align: center;
+    padding: 10px;
+    margin: 22px;
+    transition: 0.3s all ease-in-out;
+    position: relative;
+    box-shadow: 0px 0px 15px background;
+
+    border-radius: 10px;
+
+    display: inline-block;
+
+    vertical-align: middle;
+}
+
+.card img {
+    width: 250px;
+}
+
+.card a {
+    color: #D67A59;
+    text-decoration: none;
+}
+
+.card a:hover {
+    color: #e8b0a9;
+    text-decoration: underline;
+}
+
+.card .detail {
+    height: 200px;
+    overflow-y: scroll;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+.card:hover {
+    background-color: #60302F;
+    color: white;
+    transform: scale(1.05);
+}
+
+#my-game {
+    width: 100px;
+    height: 60px;
+    background-color: orange;
+}
+
+.name:hover {
+    color: #e8b0a9;
+    cursor: pointer;
+}
+
+h4::before {
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    text-align: center;
+
+}
+
+h4:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+h4::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    inset: 0 0 0 0;
+    background: #ecb39e;
+    z-index: -1;
+    transition: transform .3s ease;
+}
+
+h4 {
+    position: relative;
+}
+
+h5::before {
+    transform: scaleX(0);
+    transform-origin: bottom left;
+}
+
+h5:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom right;
+}
+
+h5::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    inset: 0 0 0 0;
+    background: #ecb39e;
+    z-index: -1;
+    transition: transform .3s ease;
+}
+
+h5 {
+    position: relative;
+}
+
+@media (orientation: landscape) {
+    body {
+        grid-auto-flow: column;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 97vh;
+}
