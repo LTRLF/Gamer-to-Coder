@@ -70,6 +70,7 @@ const startGame = () => {
   startContainer.classList.add("hide");
   inGameContainer.classList.remove("hide");
 };
+
 //Block all the Buttons
 const blocker = () => {
   let letterButtons = document.querySelectorAll(".letters");
